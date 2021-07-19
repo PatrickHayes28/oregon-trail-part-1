@@ -5,6 +5,7 @@
 
 // Create a wagon that can hold 2 people
 let wagon = new Wagon(2);
+
 // Create three travelers
 let henrietta = new Traveler("Henrietta");
 let juan = new Traveler("Juan");

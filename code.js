@@ -33,12 +33,12 @@ function Wagon(capacity){
 
 // this checks for available seats on the wagon  
     Wagon.prototype.getAvailableSeatCount = function() { 
-      let availableSeats  = this.capacity - this.passengers.length
+      let availableSeats = this.capacity - this.passengers.length
       return availableSeats
     }
     // this is adding passengers to the wagon
     Wagon.prototype.join = function(Traveler) {
-      if (this.getAvailableSeatCount()>+1) {
+      if (this.getAvailableSeatCount()>0) {
         this.passengers.push(Traveler)
         console.log(`${Traveler.name} is boarding!`)
       } else {
